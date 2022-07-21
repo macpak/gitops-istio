@@ -4,7 +4,7 @@ metadata:
   name: istio-system6
   namespace: flux-system
 spec:
-  #interval: 10m0s
+  interval: 10m0s
   path: ./istio/system
   prune: true
   wait: true
