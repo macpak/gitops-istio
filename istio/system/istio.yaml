@@ -17,13 +17,6 @@ metadata:
   labels:
     app.kubernetes.io/part-of: istio
 spec:
-  releaseName: istio-base
-  dependsOn:
-    - name: istio
-  install:
-    crds: Create
-  upgrade:
-    crds: CreateReplace
   chart:
     spec:
       version: "1.14"
