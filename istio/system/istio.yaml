@@ -18,6 +18,8 @@ metadata:
     app.kubernetes.io/part-of: istio
 spec:
   releaseName: istio-base
+  dependsOn:
+    - name: istio
   install:
     crds: Create
   upgrade:
