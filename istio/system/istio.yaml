@@ -19,6 +19,7 @@ metadata:
 spec:
   dependsOn:
     - name: istiorepo
+      namespace: istio-system
   chart:
     spec:
       version: "1.14"
