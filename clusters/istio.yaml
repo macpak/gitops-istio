@@ -8,9 +8,9 @@ spec:
   path: ./istio/system
   prune: true
   wait: true
-  sourceRef:
-    kind: GitRepository
-    name: flux-system
+  # sourceRef:
+  #   kind: GitRepository
+  #   name: flux-system
   postBuild:
     substituteFrom:
       - kind: ConfigMap
@@ -28,6 +28,6 @@ spec:
   path: ./istio/gateway
   prune: true
   wait: true
-  sourceRef:
-    kind: GitRepository
-    name: flux-system
+  # sourceRef:
+  #   kind: GitRepository
+  #   name: flux-system
