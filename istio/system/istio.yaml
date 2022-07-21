@@ -54,7 +54,7 @@ spec:
         resources:
           requests:
             cpu: 10m
-            memory: 16Mi
+            memory: 20Mi
     pilot:
       autoscaleEnabled: false
       resources:
