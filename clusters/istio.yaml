@@ -1,7 +1,7 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: istio-system9
+  name: istio-system10
   namespace: flux-system
 spec:
   interval: 10m0s
