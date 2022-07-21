@@ -2,7 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
   name: istiorepo
-  namespace: istio-system2
+  namespace: istio-system
   labels:
     app.kubernetes.io/part-of: istio
 spec:
@@ -13,7 +13,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: istiorepo-base
-  namespace: istio-system2
+  namespace: istio-system
   labels:
     app.kubernetes.io/part-of: istio
 spec:
@@ -24,7 +24,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: istiorepo
-        namespace: istio-system2
+        namespace: istio-system
   interval: 1m0s
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
@@ -45,11 +45,11 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: istiorepo
-        namespace: istio-system2
+        namespace: istio-system
   interval: 1m0s
   values:
     global:
-      istioNamespace: istio-system2
+      istioNamespace: istio-system
       proxy:
         resources:
           requests:
