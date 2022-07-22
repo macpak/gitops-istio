@@ -10,7 +10,7 @@ spec:
   wait: true
   sourceRef:
     kind: GitRepository
-    name: istioconfig
+    name: istio
   postBuild:
     substituteFrom:
       - kind: ConfigMap
